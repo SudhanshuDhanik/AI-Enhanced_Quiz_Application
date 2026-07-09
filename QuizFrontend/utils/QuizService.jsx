@@ -1,5 +1,9 @@
 import axios from "axios"
 
+export const api = axios.create({
+	baseURL: "https://ai-enhanced-quiz-application.onrender.com/api/quizzes"
+})
+
 export const createQuestion = async(quizQustion) =>{
   try {
     const response = await api.post("/create-new-question", quizQustion)
