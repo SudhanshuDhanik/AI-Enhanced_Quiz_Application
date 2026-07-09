@@ -16,7 +16,11 @@ import java.util.Optional;
 
 import static org.springframework.http.HttpStatus.CREATED;
 
-@CrossOrigin("http://localhost:5173")
+//Already configured CORS in WebConfig.java, so no need to use @CrossOrigin here
+// @CrossOrigin(origins = {
+//     "http://localhost:5173",
+//     "https://aiquizappbysudhanshu.netlify.app"
+// }) 
 @RestController
 @RequestMapping("/api/quizzes")
 @RequiredArgsConstructor

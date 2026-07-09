@@ -14,7 +14,10 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:5173")  // ✅ your frontend port
+                       .allowedOrigins(
+                                "http://localhost:5173",
+                                "https://aiquizappbysudhanshu.netlify.app"
+                        )  // ✅ your frontend port
                         .allowedMethods("*");
             }
         };
