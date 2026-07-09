@@ -1,6 +1,5 @@
 import axios from "axios"
 
-
 export const createQuestion = async(quizQustion) =>{
   try {
     const response = await api.post("/create-new-question", quizQustion)
